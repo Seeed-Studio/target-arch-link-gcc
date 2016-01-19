@@ -1,0 +1,85 @@
+{
+  "name": "arch-link-gcc",
+  "version": "1.0.0",
+  "inherits": {
+    "nordic-nrf51822-gcc": "^1.0.0"
+  },
+  "description": "mbed build target for the Seeed Arch Link (16K RAM nRF51822) platform.",
+  "homepage": "https://github.com/Seeed-Studio/target-arch-link-gcc",
+  "repository": {
+    "url": "git@github.com:Seeed-Studio/target-arch-link-gcc.git",
+    "type": "git"
+  },
+  "licenses": [
+    {
+      "url": "https://spdx.org/licenses/Apache-2.0",
+      "type": "Apache-2.0"
+    }
+  ],
+  "keywords": [
+    "seeed",
+    "mbed-target:arch_link",
+    "gcc",
+    "ble"
+  ],
+  "similarTo": [
+    "nrf51dk"
+  ],
+  "config": {
+    "nrf51822": {
+      "ram_size": "16K"
+    },
+    "image": {
+      "heap": {
+        "warning_threshold": 1024
+      }
+    },
+    "hardware": {
+      "pins": {
+        "LED1": "p30",
+        "LED2": "p30",
+        "LED3": "p30",
+        "LED4": "p30",
+        "RX_PIN_NUMBER": "p7",
+        "TX_PIN_NUMBER": "p8",
+        "CTS_PIN_NUMBER": "p26",
+        "RTS_PIN_NUMBER": "p27",
+        "USBTX": "TX_PIN_NUMBER",
+        "USBRX": "RX_PIN_NUMBER",
+        "I2C_SDA0": "p5",
+        "I2C_SCL0": "p6",
+        "A0": "p1",
+        "A1": "p2",
+        "A2": "p3",
+        "A3": "p4",
+        "A4": "p5",
+        "A5": "p6",
+        "D0": "p7",
+        "D1": "p8",
+        "D2": "p9",
+        "D3": "p10",
+        "D4": "p11",
+        "D5": "p12",
+        "D6": "p13",
+        "D7": "p17",
+        "D8": "p18",
+        "D9": "p23",
+        "D10": "p24",
+        "D11": "p25",
+        "D12": "p28",
+        "D13": "p29",
+        "D14": "p5",
+        "D15": "p6",
+        "W5500_MOSI": "p25",
+        "W5500_MISO": "p28",
+        "W5500_CS": "p24",
+        "W5500_SCLK": "p29",
+        "W5500_RST": "p17",
+        "SD_MOSI": "p25",
+        "SD_MISO": "p28",
+        "SD_SCLK": "p29",
+        "SD_CS": "p11"
+      }
+    }
+  }
+}
